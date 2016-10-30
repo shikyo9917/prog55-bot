@@ -12,6 +12,9 @@
     "discord",
     "discordapp"
   ],
+  "engines": {
+     "node": "6.9.1" 
+  },
   "author": "shikyo",
   "license": "BSD-2-Clause",
   "dependencies": {
