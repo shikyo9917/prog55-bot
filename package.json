@@ -13,11 +13,12 @@
     "discordapp"
   ],
   "engines": {
-     "node": "6.9.1"
+    "node": "6.9.1"
   },
   "author": "shikyo",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "discordie": "^0.9.0"
+    "discordie": "^0.9.0",
+    "pg": "^6.1.0"
   }
 }
