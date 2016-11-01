@@ -10,7 +10,7 @@
 4. profit
 
 ### Criando novos comandos
-Para criar novos comandos crie um arquivo chamado `\<comando\>.js` na pasta `lib/commands/` contendo:  
+Para criar novos comandos crie um arquivo chamado `<comando>.js` na pasta `lib/commands/` contendo:  
 
 ``` JavaScript
 module.exports = function (args, e, manager) {
@@ -18,7 +18,7 @@ module.exports = function (args, e, manager) {
 }
 ```
 
-Seu comando é carregado automaticamente e é execudado com !\<comando\>
+Seu comando é carregado automaticamente e é execudado com `!<comando>`
 
 Quer que o seu commando tenha um nome diferente do arquivo?
 Basta criar um alias no construtor do `CommandsManager` em `lib/CommandsManager.js`
