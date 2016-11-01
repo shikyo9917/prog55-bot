@@ -6,8 +6,10 @@
 0. instale o Node.js v6.9.1
 1. clone o repositório
 2. `npm install`
-3. ????
-4. profit
+3. `cp .env.example .env`
+4. coloque sua url do postgres no arquivo .env
+5. ????
+6. profit
 
 ### Criando novos comandos
 Para criar novos comandos crie um arquivo chamado `<comando>.js` na pasta `lib/commands/` contendo:  
