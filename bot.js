@@ -74,8 +74,7 @@ client.Dispatcher.on("MESSAGE_CREATE", e => {
     //reset polling since heroku is active
     // resetPolling();
 
-    let args = e.message.content.replace(prefix, '').split(" ");
-    console.log(args);
+    let args = e.message.content.replace(prefix, '').split(/\s+/);
     const command = args.shift();
     if(e.message.content.startsWith(prefix)){
         manager.run(command, args, e);
