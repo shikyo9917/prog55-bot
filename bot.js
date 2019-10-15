@@ -69,7 +69,7 @@ function resetPolling() {
     setPolling();
 }
 
-var prefix = 'k!'
+var prefix = '!'
 client.Dispatcher.on("MESSAGE_CREATE", e => {
     //reset polling since heroku is active
     // resetPolling();
