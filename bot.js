@@ -75,6 +75,7 @@ client.Dispatcher.on("MESSAGE_CREATE", e => {
     // resetPolling();
 
     let args = e.message.content.replace(prefix, '').split(/\s+/);
+    console.log(args);
     const command = args.shift();
     if(e.message.content[0] == prefix){
         manager.run(command, args, e);
