@@ -77,7 +77,7 @@ client.Dispatcher.on("MESSAGE_CREATE", e => {
     let args = e.message.content.replace(prefix, '').split(" ");
     console.log(args);
     const command = args.shift();
-    if(e.message.content[0] == prefix){
+    if(e.message.content.startsWith(prefix)){
         manager.run(command, args, e);
     }else if(client.User.isMentioned(e.message, true)){
         manager.run('talk', args, e);
